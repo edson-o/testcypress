@@ -1,23 +1,23 @@
 Feature: Feater Name
 
-  @tagexample001
+  @runThis
   Scenario Outline: Scenario Example
     Given Home page is opened
     When enter email "<email>" and password "<pass>"
     And click sign in
-    Then verify the message "<message>"
+    Then verify the message
 
     Examples:
-      | email           | pass      | message |
-      | eorti@gmail.com | Admin@123 | Hello   |
+      | email                       | pass      |
+      | edsontestingqa+99@gmail.com | Admin@123 |
 
-  @dfgdfgdfg
-  Scenario Outline: dfgdfgdfgdfgdfgdf
+  
+  Scenario Outline: Scenario Example2
     Given Home page is opened
     When enter email "<email>" and password "<pass>"
     And click sign in
-    Then verify the message "<message>"
+    Then verify the message
 
     Examples:
-      | email           | pass      | message                 |
-      | eorti@gmail.com | Admin@123 | Wrong email or password |
+      | email           | pass      |
+      | eorti@gmail.com | Admin@123 |

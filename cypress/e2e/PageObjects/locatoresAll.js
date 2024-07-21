@@ -18,6 +18,7 @@ Cypress.Commands.add('getByEmailInput', () => {
   });
   cy.getByEmailInput().type('example@example.com');
   cy.xpath('//input[@type="email"]');
+  
 
   cy.get('[name="email"]').type('testuser@example.com');
 

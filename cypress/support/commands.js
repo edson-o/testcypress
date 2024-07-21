@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('waitForElement', (selector, timeout = 5000) => {
+    cy.get(selector, { timeout }).should('be.visible');
+  });
+  
